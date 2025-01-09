@@ -46,3 +46,31 @@ tip1: [가독성을 높이는 습관](https://datarian.io/blog/good-sql-code)
 - 실행속도가 오래걸리므로 최대한 지양하는게 맞을것 같다
 
 > tip2 : 패턴에 맞는 문자 찾을때 sql 정규표현식('sql regular expression') 쓰면 복잡한 문자열 패턴 추출가능하다. 
+
+# 3. 데이터 순서 정렬하기
+```sql
+SELECT
+
+FROM
+
+WHERE
+
+ORDER BY column1 DESC column2 ASC --DESC:내림차순 ASC:오름차순(default)
+
+LIMIT
+```
+
+```sql
+-- 문자열 자르고 붙이기
+LEFT('abcde', 3) -- 왼쪽에서 3개
+-- abc
+RIGHT('abcde', 3) -- 오른쪽에서 3개
+-- cde
+SUBSTR('abcde', 3, 2) -- 3번째 부터 2개 출력
+SUBSTRING('abcde', 3, 2) -- 동일한 코드
+--cd
+CONCAT('MY' , 'S', 'L') -- 합치기; NULL값 있으면 NULL로 출력함
+-- MYSL
+
+
+```
