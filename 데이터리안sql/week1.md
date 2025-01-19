@@ -55,7 +55,7 @@ FROM
 
 WHERE
 
-ORDER BY column1 DESC column2 ASC --DESC:내림차순 ASC:오름차순(default)
+ORDER BY column1 DESC , column2 ASC --DESC:내림차순 ASC:오름차순(default)
 
 LIMIT
 ```
